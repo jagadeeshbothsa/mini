@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:montserrat;
+    background:rgba(0,0,0,0)url(/Users/satya/Downloads/login.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+.login{
+    background: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    height:auto;
+    border-radius: 10px;
+
+}
+.login h1{
+    text-align:center; 
+    width:200px;
+    font-size: 50px;
+    border-bottom: 4px solid rgb(75, 166, 202);
+    margin-bottom: 35px;
+    padding: 20px;
+}
+.login form{
+    padding:0 40px;
+    box-sizing: border-box;
+}
+form .iput{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.iput input{
+    width: 100px;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.iput label{
+    position: absolute;
+    top:50%;
+    left:5%;
+    color:#adadad;
+    font-size: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+.iput span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left:0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: 0.5s;
+
+}
+.iput input:focus ~ label,
+.iput input:valid ~ label{
+    top:-5px;
+    color: #2691d9;
+
+}
+.iput input:focus ~ span::before,
+.iput input:valid ~ span::before{
+width: 100px;
+}
+.pass{
+    margin:-5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100px;
+    height: 50px;
+    border:1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    cursor: pointer;
+    font-weight: 700;
+
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: 0.5s;
+}
+.signup{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+.signup a{
+    color: #2691d9;
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: underline;
+}

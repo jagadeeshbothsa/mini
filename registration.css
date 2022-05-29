@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3) url(/Users/satya/Downloads/presentation.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding:10px;
+    height: 100vh;
+}
+.reg{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+}
+.reg h1{
+    font-size: 40px;
+    width: 400px;
+    text-align:center;
+    margin-left: 80px;
+    text-transform: uppercase;
+    margin: 40px,0;
+    margin-bottom: 30px;
+}
+.reg label{
+    font-size: 20px;
+    margin: 45px 0;
+}
+.reg input{
+    font-size: 16px;
+    padding: 15px 10px;
+    margin-left: 100px;
+    align-content:right;
+    width: 90%;
+    display:block;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+}
+.reg button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 200px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 40%;
+    border:0;
+    background-color: rgb(58, 230, 115);
+}
+.reg button:hover{
+    color: rgb(224, 59, 17);
+}
